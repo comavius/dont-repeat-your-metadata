@@ -39,10 +39,10 @@
           lockFile = ./Cargo.lock;
         };
 
-        # Also, all metadata is written in `Cargo.toml`!
+        # Also, metadata is read from Cargo.toml.
         meta = with cargo-toml.package; {
-          inherit description license homepage;
-          maintainers = authors;
+          inherit description homepage;
+          license.spdxId = license;
         };
       };
 
