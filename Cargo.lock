@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "dry_version_tag"
+name = "dry_metadata"
 version = "1.0.0-alpha"
